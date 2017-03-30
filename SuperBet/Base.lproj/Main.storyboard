@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="SuperBet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,94 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztn-pk-Gcv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2xK-Ka-5Uu"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sG6-UB-lri">
+                                <rect key="frame" x="-0.5" y="20" width="375" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="UDQ-Xz-k5w">
+                                        <rect key="frame" x="15" y="0.0" width="614" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpG-R4-b4i">
+                                                <rect key="frame" x="0.0" y="0.0" width="49" height="40"/>
+                                                <state key="normal" title="SPORT">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQz-K8-T5P">
+                                                <rect key="frame" x="74" y="0.0" width="91" height="40"/>
+                                                <state key="normal" title="PARIURI LIVE">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mc9-UG-90x">
+                                                <rect key="frame" x="190" y="0.0" width="54" height="40"/>
+                                                <state key="normal" title="JOCURI">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16q-Xq-xNU">
+                                                <rect key="frame" x="269" y="0.0" width="91" height="40"/>
+                                                <state key="normal" title="CASINO LIVE">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XjU-e4-UgD">
+                                                <rect key="frame" x="385" y="0.0" width="39" height="40"/>
+                                                <state key="normal" title="LOTO">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXh-5z-lO5">
+                                                <rect key="frame" x="449" y="0.0" width="71" height="40"/>
+                                                <state key="normal" title="VIRTUALE">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STN-h4-X9P">
+                                                <rect key="frame" x="545" y="0.0" width="69" height="40"/>
+                                                <state key="normal" title="SPECIALE">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="F3P-kx-FwD"/>
+                                    <constraint firstAttribute="trailing" secondItem="UDQ-Xz-k5w" secondAttribute="trailing" constant="15" id="Ib5-6v-nVQ"/>
+                                    <constraint firstItem="UDQ-Xz-k5w" firstAttribute="height" secondItem="sG6-UB-lri" secondAttribute="height" id="K9Y-2c-nDD"/>
+                                    <constraint firstAttribute="bottom" secondItem="UDQ-Xz-k5w" secondAttribute="bottom" id="KAw-Pd-suP"/>
+                                    <constraint firstItem="UDQ-Xz-k5w" firstAttribute="top" secondItem="sG6-UB-lri" secondAttribute="top" id="YIR-EX-pQx"/>
+                                    <constraint firstItem="UDQ-Xz-k5w" firstAttribute="leading" secondItem="sG6-UB-lri" secondAttribute="leading" constant="15" id="hXy-pI-1Hn"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ztn-pk-Gcv" secondAttribute="trailing" id="8R9-Yx-Hcb"/>
+                            <constraint firstItem="ztn-pk-Gcv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="93h-Et-Hei"/>
+                            <constraint firstItem="ztn-pk-Gcv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UmG-Im-29s"/>
+                            <constraint firstItem="sG6-UB-lri" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="h7e-BC-6Fw"/>
+                            <constraint firstAttribute="trailing" secondItem="sG6-UB-lri" secondAttribute="trailing" id="mXm-Im-We1"/>
+                            <constraint firstItem="sG6-UB-lri" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nle-z1-OPO"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollVNavigation" destination="sG6-UB-lri" id="bZd-2O-HQk"/>
+                        <outlet property="stackViewBetCategories" destination="UDQ-Xz-k5w" id="dcl-ts-Opt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
