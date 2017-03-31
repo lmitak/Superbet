@@ -10,17 +10,24 @@ import UIKit
 
 class MainVC: UIViewController {
 
-    @IBOutlet weak var scrollVNavigation: UIScrollView!
+    @IBOutlet weak var scrollVHeader: UIScrollView!
     @IBOutlet weak var stackViewBetCategories: UIStackView!
+    @IBOutlet weak var btnSport: BorderButton!
+    @IBOutlet weak var btnLive: BorderButton!
+    @IBOutlet weak var menuBar: UIImageView!
+    @IBOutlet weak var menuLogin: UIImageView!
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //scrollVNavigation.contentOffset = CGPoint(x: 15, y: 0)
-        //scrollVNavigation.setContentOffset(CGPoint(x: 15, y: 0), animated: false)
-        //scrollVNavigation.contentInset = UIEdgeInsets(top: CGFloat(0.0), left: CGFloat(15.0), bottom: CGFloat(0.0), right: CGFloat(15.0))
+        
+        btnLive.createBorderOfColor(color: UIColor.white.cgColor)
+        
+        btnLive.roundCorners(value: 2.0)
+        btnSport.roundCorners(value: 2.0)
         
         
     }
