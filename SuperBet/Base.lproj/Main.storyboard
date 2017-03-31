@@ -22,15 +22,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztn-pk-Gcv">
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztn-pk-Gcv">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="2xK-Ka-5Uu"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sG6-UB-lri">
-                                <rect key="frame" x="0.0" y="20" width="375" height="40"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sG6-UB-lri">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="40"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="UDQ-Xz-k5w">
                                         <rect key="frame" x="15" y="0.0" width="614" height="40"/>
@@ -93,9 +93,22 @@
                                     <constraint firstAttribute="trailing" secondItem="UDQ-Xz-k5w" secondAttribute="trailing" constant="15" id="Ib5-6v-nVQ"/>
                                     <constraint firstItem="UDQ-Xz-k5w" firstAttribute="height" secondItem="sG6-UB-lri" secondAttribute="height" id="K9Y-2c-nDD"/>
                                     <constraint firstAttribute="bottom" secondItem="UDQ-Xz-k5w" secondAttribute="bottom" id="KAw-Pd-suP"/>
+                                    <constraint firstItem="UDQ-Xz-k5w" firstAttribute="centerX" secondItem="sG6-UB-lri" secondAttribute="centerX" id="UrJ-ii-7AU"/>
                                     <constraint firstItem="UDQ-Xz-k5w" firstAttribute="top" secondItem="sG6-UB-lri" secondAttribute="top" id="YIR-EX-pQx"/>
                                     <constraint firstItem="UDQ-Xz-k5w" firstAttribute="leading" secondItem="sG6-UB-lri" secondAttribute="leading" constant="15" id="hXy-pI-1Hn"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="UrJ-ii-7AU"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="Ib5-6v-nVQ"/>
+                                        <include reference="UrJ-ii-7AU"/>
+                                        <exclude reference="hXy-pI-1Hn"/>
+                                    </mask>
+                                </variation>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZO-2P-1TZ" userLabel="NavigationView">
                                 <rect key="frame" x="0.0" y="60" width="375" height="50"/>
